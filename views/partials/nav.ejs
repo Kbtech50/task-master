@@ -1,0 +1,37 @@
+
+    <div id="content">
+        
+        <div class="header">
+            
+            
+            <nav>
+                <ul>
+                    <li><b>Task Manager</b></li>
+                    <li>logged in as <%=user.name %> </li>
+                    <li><a href="/tasks/logout">Log out</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="sidebar">
+            <form role="search" id="form" action="/tasks/search/">
+                <input type="search" id="query" name="q" placeholder="search a task..."/>
+                <button type="submit"><img src="https://img.icons8.com/?size=100&id=21101&format=png&color=000000" width="10px" height="10px"/>
+                </button>
+            </form><hr>
+           
+            <ul>
+                <li><img src="https://img.icons8.com/?size=100&id=13462&format=png&color=000000" width="30px" height="30px"/><a href="/tasks">All Task </a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=102544&format=png&color=000000" width="30px" height="30px"/><a href="/tasks/addtask">Add new Task</a></li>
+                </ul>
+            <br><hr><br>
+            <ul>
+                <li><img src="https://img.icons8.com/?size=100&id=OR24mwwtk9Rb&format=png&color=000000" width="30px" height="30px"/><a href="/tasks/priority-h">High priority </a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=FtwKY-Rja9nr&format=png&color=000000" width="30px" height="30px"/><a href="/tasks/priority-m">medium priority </a></li>
+                <li><img src="https://img.icons8.com/?size=100&id=12335&format=png&color=000000" width="30px" height="30px"/><a href="/tasks/priority-l">Low priority </a></li>
+                </ul>
+             <br><hr><br>
+            <ul><li><img src="https://img.icons8.com/?size=100&id=TWlM8ul6wVoK&format=png&color=000000" width="30px" height="30px"/><a href="/tasks/duedate">Due date</a> </li></ul><br><hr><br><br>
+            
+        </div>
+
